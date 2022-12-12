@@ -22,7 +22,7 @@ let luckyNumber = 24
 console.log( 'My name is Sean Kimbrough, and I think 24 is a winner!');
 
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
-let adventurous = true ;
+let adventurous = true;
 
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = 'burgers'  +  'french fries';
@@ -42,6 +42,12 @@ const allowedPets = 4;
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
+if ( adventurous ){
+    console.log( 'Adventures are great! ');
+}
+else if (adventurous != 'adventures' ){
+    console.log( 'How about we stay home' );
+}
 
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
