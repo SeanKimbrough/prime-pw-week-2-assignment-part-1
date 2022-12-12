@@ -56,12 +56,17 @@ if (adventurous && luckyNumber ){
 }
 
 // 15 - Write a conditional that console logs "I can have more pets!" 
-if ( pets >= 2 ){
+if ( pets < allowedPets ){
     console.log( "I can have more pets!" );
 }
-else if ( pets == 5 ){
-    console.log( 'then I cannot have anymore pets' );
+else if ( pets === allowedPets ){
+    console.log( 'I have enough pets' );
 }
+
+    else {
+        console.log( 'Oh no, I have too many pets!' );
+    }
+
 //if the value of `pets` is less than the value of `allowedPets`,
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
@@ -70,6 +75,18 @@ else if ( pets == 5 ){
 // STRETCH GOALS:
 
 // 16 - Make a variable called `mostPets` and a conditional that
+let mostPets = 3
+
+if ( pets >= friendsPets ){
+    console.log( 'Then I have the mostPets' );
+}
+else if ( pets<= friendsPets ){
+    console.log( 'Then my friend has most pets' );
+}
+else {
+     console.log ( 'netiher of us have the mostPets');
+}
+
 // correctly checks the `pets` and `friendsPets` variables, and
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
