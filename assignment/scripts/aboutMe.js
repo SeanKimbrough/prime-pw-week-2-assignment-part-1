@@ -2,24 +2,29 @@
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 let firstName = 'Sean';
 
+
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 let lastName = 'Kimbrough';
 
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
-let fullName = 'firstName' + 'lastName'; 
+let fullName = firstName + " " + lastName; 
 
 // 4 - Console log the value of `fullName`
-console.log( 'fullName is' , firstName , lastName);
+console.log(fullName = firstName + " " + lastName);
 
 
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = 24
+let luckyNumber = 24;
+console.log ( luckyNumber );
+
+
 
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
-console.log( 'My name is Sean Kimbrough, and I think 24 is a winner!');
+console.log( 'My name is', fullName + "",'and I think' , luckyNumber+ "",'is a winner!');
+
 
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = true;
@@ -51,8 +56,8 @@ else if (adventurous != 'adventures' ){
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if (adventurous && luckyNumber ){
-    console.log( 'Roll the dice! ');
+if (adventurous && luckyNumber ===2 ){
+    console.log( "Roll the dice!" );
 }
 
 // 15 - Write a conditional that console logs "I can have more pets!" 
@@ -77,10 +82,11 @@ else if ( pets === allowedPets ){
 // 16 - Make a variable called `mostPets` and a conditional that
 let mostPets = 3
 
-if ( pets >= friendsPets ){
+if ( pets < friendsPets ){
+    mostPets = pets
     console.log( 'Then I have the mostPets' );
 }
-else if ( pets<= friendsPets ){
+else if ( pets > friendsPets ){
     console.log( 'Then my friend has most pets' );
 }
 else {
